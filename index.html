@@ -1,63 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CatPhotoApp</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <nav>
-            <h1>CatPhotoApp</h1>
-            <ul>
-                <li><a href="#photos">Photos</a></li>
-                <li><a href="#lists">Lists</a></li>
-            </ul>
-        </nav>
-    </header>
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>CatPhotoApp</title>
+        <link rek="stylesheet" href="style.css"/>
+        <script defer src="script.js"></script>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <h1>CatPhotoApp</h1>
+                <button id="menu-toggle">☰</button>
+                <ul id="nav-menu">
+                    <li><a href="#photos">Photos</a></li>
+                    <li><a href="#facts">Facts</a></li>
+                    <li><a href="#influencers">Famous Cats</a></li>
+                    <li><a href="#contacts">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
 
-    <main>
-        <section id="photos">
-            <h2>Cat Photos</h2>
-            <p>Everyone loves <a href="https://i.ytimg.com/vi/vH8kYVahdrU/sddefault.jpg">cute cats</a> online!</p>
-            <p>See more <a target="_blank" href="https://freecatphotoapp.com">cat photos</a> in our gallery.</p>
-            <a href="https://freecatphotoapp.com"><img src="https://media.posterlounge.com/img/products/760000/750729/750729_poster.jpg" alt="Group of cats"></a>
-        </section>
-        <section id="lists">
-            <h2>Cat Lists</h2>
-            <div class="list-block">
-             <h3>Things cats love:</h3>
-             <ul>
-                <li>Catnip</li>
-                <li>Laser Pointers</li>
-                <li>Lasagna</li>
-             </ul>
-             <figure>
-                <img src="https://www.eatingwell.com/thmb/nE4-963rUafhkVwJgDjPCqGQVVY=/750x0/filters:no_upscale():max_bytes(150000):strip_icc()/Veggie-Lasagna-beauty-552-b5123cb9307b406ea30ccda5f101d663.jpg" alt="lasagna.">
-                <figcaption>Cats <em>love</em> lasagna.</figcaption>
-             </figure>
-            </div>
-            
-            <div class="list-block">
-             <h3>Top 3 things cats hate:</h3>
-             <ul>
-                <li>Flea Treatment</li>
-                <li>Thunder</li>
-                <li>Water</li>
-             </ul>
-             <figure>
-                <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg" alt="A group of cats looking around">
-                <figcaption>Cats <strong>hate</strong> other cats sometimes.</figcaption>
-             </figure>
-            </div>
-        </section>
-    </main>
+        <main>
+            <section id="photos">
+                <h2>Welcome to CatPhotoApp</h2>
+                <p>Here's a cute photo of a cat:</p>
+                <img src="https://cdn2.thecatapi.com/images/MTY3ODIyMQ/jpg" alt="A cute cat" />
+            </section>
 
-    <footer>
-        <p>&copy; 2025 CatPhotoApp. All rights reserved.</p>
-    </footer>
+            <section id="facts">
+                <h2>Fun Cat Facts</h2>
+                <div class="list-block">
+                    <ul>
+                        <li>Cats sleep 70% of their lives.</li>
+                        <li>A group of cats is called a clowder.</li>
+                        <li>Cats can rotate their ears 180 degrees.</li>
+                    </ul>
+                </div>
+            </section>
 
-    <script src="script.js"></script>
-</body>
+            <section id="infulencers">
+                <h2>Famous Cats of Instagram</h2>
+                <div class="influencers">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/80" alt="@nala_cat">
+                        <p><a href="https://www.instagram.com/nala_cat/" target="_blank">@nala_cat</a></p>
+                    </div>
+                    <div class="card">
+                        <img src="https://via.placeholder.com/80" alt="@cobythecat">
+                        <p><a href="https://www.instagram.com/cobythecat/" target="_blank">@cobythecat</a></p>
+                    </div>
+                    <div>
+                        <img src="https://via.placeholder.com/80" alt="@realgrumpycat">
+                        <p><a href="https://www.instagram.com/realgrumpycat/" target="_blank">@realgrumpycat</a></p>
+                    </div>
+                    <div class="card">
+                        <img src="https://via.placeholder.com/80" alt="@thatlittlepuff">
+                        <p><a href="https://www.instagram.com/thatlittlepuff/" target="_blank">@thatlittlepuff</a></p>
+                    </div>
+                    <div class="card">
+                        <img src="https://via.placeholder.com/80" alt="@venustwofacecat">
+                        <p><a href="https://www.instagram.com/venustwofacecat/" target="_blank">@venustwofacecat</a></p>
+                    </div>
+                    <div class="card">
+                        <img src="https://via.placeholder.com/80" alt="@white_coffee_cat">
+                        <p><a href="https://www.instagram.com/white_coffee_cat/" target="_blank">@white_coffee_cat</a></p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact">
+                <h2>Contact Us</h2>
+                <form>
+                    <input type="text" name="name" placeholder="Your Name" required/>
+                    <input type="email" name="email" placeholder="Your Email" required/>
+                    <textarea name="message" rows="4" placeholder="Your Message..." required></textarea>
+                    <button type="submit">Send</button>
+                </form>
+            </section>
+        </main>
+        <footer>
+            <p>Made with ❤️ for cat lovers everywhere.</p>
+        </footer>
+    </body>
 </html>
