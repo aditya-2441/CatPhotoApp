@@ -5,16 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>CatPhotoApp</title>
   <link rel="stylesheet" href="style.css" />
-  <script defer src="script.js"></script>
 </head>
 <body>
   <header>
     <nav>
       <h1>CatPhotoApp</h1>
-      <button id="menu-toggle">☰</button>
-      <ul id="nav-menu">
+      <button id="menu-toggle">&#9776;</button>
+      <ul id="nav-links">
         <li><a href="#photos">Photos</a></li>
-        <li><a href="#facts">Facts</a></li>
+        <li><a href="#lists">Lists</a></li>
         <li><a href="#influencers">Famous Cats</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
@@ -23,47 +22,55 @@
 
   <main>
     <section id="photos">
-      <h2>Welcome to CatPhotoApp</h2>
-      <p>Here's a cute photo of a cat:</p>
-      <img src="https://cdn2.thecatapi.com/images/MTY3ODIyMQ.jpg" alt="A cute cat" />
+      <h2>Cat Photos</h2>
+      <p>Everyone loves <a href="https://i.ytimg.com/vi/vH8kYVahdrU/sddefault.jpg">cute cats</a> online!</p>
+      <p>See more <a target="_blank" href="https://freecatphotoapp.com">cat photos</a> in our gallery.</p>
+      <a href="https://freecatphotoapp.com">
+        <img src="https://media.posterlounge.com/img/products/760000/750729/750729_poster.jpg" alt="Group of cats" />
+      </a>
     </section>
 
-    <section id="facts">
-      <h2>Fun Cat Facts</h2>
+    <section id="lists">
+      <h2>Cat Lists</h2>
       <div class="list-block">
+        <h3>Things cats love:</h3>
         <ul>
-          <li>Cats sleep 70% of their lives.</li>
-          <li>A group of cats is called a clowder.</li>
-          <li>Cats can rotate their ears 180 degrees.</li>
+          <li>Catnip</li>
+          <li>Laser Pointers</li>
+          <li>Lasagna</li>
         </ul>
+        <figure>
+          <img src="https://www.eatingwell.com/thmb/nE4-963rUafhkVwJgDjPCqGQVVY=/750x0/filters:no_upscale():max_bytes(150000):strip_icc()/Veggie-Lasagna-beauty-552-b5123cb9307b406ea30ccda5f101d663.jpg" alt="Lasagna" />
+          <figcaption>Cats <em>love</em> lasagna!</figcaption>
+        </figure>
       </div>
     </section>
 
     <section id="influencers">
-      <h2>Famous Cats of Instagram</h2>
+      <h2>Famous Cats on Instagram</h2>
       <div class="influencers">
         <div class="card">
-          <img src="https://via.placeholder.com/80" alt="@nala_cat">
+          <img src="https://static.wikia.nocookie.net/thecatgame/images/f/fd/Nala_Cat.jpg" alt="Nala Cat">
           <p><a href="https://www.instagram.com/nala_cat/" target="_blank">@nala_cat</a></p>
         </div>
         <div class="card">
-          <img src="https://via.placeholder.com/80" alt="@cobythecat">
+          <img src="https://i.pinimg.com/originals/1d/43/b4/1d43b4a1621f30706615b839b47f234e.jpg" alt="Coby the Cat">
           <p><a href="https://www.instagram.com/cobythecat/" target="_blank">@cobythecat</a></p>
         </div>
         <div class="card">
-          <img src="https://via.placeholder.com/80" alt="@realgrumpycat">
+          <img src="https://upload.wikimedia.org/wikipedia/en/5/5e/Grumpy_Cat_by_Gage_Skidmore.jpg" alt="Grumpy Cat">
           <p><a href="https://www.instagram.com/realgrumpycat/" target="_blank">@realgrumpycat</a></p>
         </div>
         <div class="card">
-          <img src="https://via.placeholder.com/80" alt="@thatlittlepuff">
+          <img src="https://yt3.googleusercontent.com/ytc/APkrFKbGLAB4_OX0KJVRnkG1Fq6j3y2-sMSatMQgRsdS=s900-c-k-c0x00ffffff-no-rj" alt="That Little Puff">
           <p><a href="https://www.instagram.com/thatlittlepuff/" target="_blank">@thatlittlepuff</a></p>
         </div>
         <div class="card">
-          <img src="https://via.placeholder.com/80" alt="@venustwofacecat">
+          <img src="https://i.redd.it/bd6w30pqbzg71.jpg" alt="Venus the Two Face Cat">
           <p><a href="https://www.instagram.com/venustwofacecat/" target="_blank">@venustwofacecat</a></p>
         </div>
         <div class="card">
-          <img src="https://via.placeholder.com/80" alt="@white_coffee_cat">
+          <img src="https://pbs.twimg.com/profile_images/1325298870476052481/F3CJ74sC_400x400.jpg" alt="White Coffee Cat">
           <p><a href="https://www.instagram.com/white_coffee_cat/" target="_blank">@white_coffee_cat</a></p>
         </div>
       </div>
@@ -72,19 +79,18 @@
     <section id="contact">
       <h2>Contact Us</h2>
       <form>
-        <input type="text" name="name" placeholder="Your name" required />
-        <input type="email" name="email" placeholder="Your email" required />
-        <textarea name="message" rows="4" placeholder="Your message..." required></textarea>
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Your Message..." rows="5" required></textarea>
         <button type="submit">Send</button>
       </form>
     </section>
   </main>
 
   <footer>
-    <p>Made with ❤️ for cat lovers everywhere.</p>
+    <p>© 2025 CatPhotoApp. All rights reserved.</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
-</html>
-        </footer>
-    </body>
 </html>
